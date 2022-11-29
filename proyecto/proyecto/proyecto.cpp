@@ -11,7 +11,27 @@ int main()
         {
             if (dia != 29)
                 dia++;
+        }
+        else
+        {
+            mes++;
+            dia = 1;
+        }
+    }
+    else if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 9 ||
+         mes == 11)
+    {
 
+        if (dia == 31 )
+        {
+            mes++;
+            dia = 1;
+        }
+        else if (dia == 31 && mes == 12)
+        {
+            dia = 1;
+            mes = 1;
+            anio++;
         }
     }
 };
