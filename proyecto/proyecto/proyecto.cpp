@@ -18,20 +18,27 @@ int main()
             dia = 1;
         }
     }
-    else if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 9 ||
-         mes == 11)
-    {
+    else if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 ||
+        mes == 10 || mes == 12) {
 
-        if (dia == 31 )
-        {
+        if (dia == 31 && mes != 12) {
             mes++;
             dia = 1;
         }
-        else if (dia == 31 && mes == 12)
-        {
+        else if (dia == 31 && mes == 12) {
             dia = 1;
             mes = 1;
             anio++;
+        }
+        else {
+            dia++;
+        }
+
+    }
+    else {
+        if (dia == 31)
+        {
+            mes++;
         }
     }
 };
