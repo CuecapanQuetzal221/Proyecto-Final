@@ -67,4 +67,13 @@ int main()
             dia++;
         }
     }
+    else {
+        if (dia == 30 || dia == 28) {
+            mes++;
+            dia = 1;
+        }
+        else {
+            dia++;
+        }
+    }
 }
