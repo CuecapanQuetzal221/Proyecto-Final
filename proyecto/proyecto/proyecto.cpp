@@ -63,4 +63,8 @@ int main()
             mes++;
            
         }
+        else {
+            dia++;
+        }
+    }
 }
