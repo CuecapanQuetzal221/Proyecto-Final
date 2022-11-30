@@ -80,4 +80,7 @@ int main()
             dia++;
         }
     }
+    printf("%2i %2i %4i", dia, mes, anio);
+
+    return 0;
 }
